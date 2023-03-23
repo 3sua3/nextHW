@@ -1,0 +1,497 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: #f2f3f5;
+}
+.container{
+    width: 333px;
+    height: 720px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.firstrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 333px;
+    z-index: 1;
+}
+.firstrow .left{
+    position: absolute;
+    left: 35px;
+    top: 10px;
+}
+.firstrow .right{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+.secondrow #tossmark{
+    width: 71px;
+    height: 24px;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: 45px;
+}
+.secondrow #tossmark2{
+    width: 17px;
+    height: 20px;
+    object-fit: cover;
+    position: absolute;
+    right: 60px;
+    top: 45px;
+}
+.secondrow #tossmark3{
+    width: 24px;
+    height: 23px;
+    object-fit: cover;
+    position: absolute;
+    right: 15px;
+    top: 42px;
+}
+.secondrow{
+    width: 333px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: fixed;
+    background-color: #f2f3f5;
+}
+.thirdrow{
+    width: 265px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 13px;
+    top: 83px;
+}
+#tossbank{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+    font-weight: 900;
+    color: #000000;
+}
+.fourthrow{
+    width: 265px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 13px;
+    top: 154px;
+}
+.fifthrow{
+    width: 265px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 13px;
+    bottom: 87px;
+}
+.sixthrow{
+    width: 265px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 133px;
+}
+.fourthrow .firstbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 22px;
+}
+.fourthrow .secondbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 66px;
+    align-items: center;
+}
+.fifthrow .firstbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 22px;
+}
+.fifthrow .secondbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    align-items: center;
+}
+.fourthrow .thirdbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 130px;
+    align-items: center;
+}
+.fourthrow .fourthbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 197px;
+    align-items: center;
+}
+.fourthrow .fifthbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 263px;
+    align-items: center;
+}
+.fourthrow #bank{
+    width: 35px;
+    height: 35px;
+}
+.fifthrow img{
+    width: 23px;
+    height: 34px;
+}
+.sixthrow .secondbar #bank{
+    width: 33px;
+    height: 33px;
+}
+.fourthrow #bankname{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px; 
+    letter-spacing: -0.5px;
+    color: #51585e;  
+    position: absolute;
+    left: 48px;
+    bottom: 3px;
+}
+.fifthrow #bankname{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px; 
+    letter-spacing: -0.5px;
+    color: #51585e;  
+    position: absolute;
+    left: 44px;
+    bottom: -5px;
+}
+.fifthrow #bankname #money{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+    color: #323844;
+}
+.fourthrow #bankname #money{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: #323844;
+}
+.fourthrow .secondbar .putmoney{
+    width: 44px;
+    height: 27px;
+    background-color: #f2f3f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    color: #70737c;
+    border-radius: 6px;
+}
+.fourthrow .secondbar .putmoney span{
+    position: relative;
+    top: 6px;
+    left: 1px;
+}
+.fifthrow .secondbar .putmoney{
+    width: 44px;
+    height: 27px;
+    background-color: #f2f3f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    color: #70737c;
+    border-radius: 6px;
+}
+.fifthrow .secondbar .putmoney span{
+    position: relative;
+    top: 7px;
+}
+.sixthrow #bankname{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px; 
+    letter-spacing: -0.5px;
+    color: #51585e;  
+    position: absolute;
+    left: 44px;
+    bottom: -1px;
+}
+.sixthrow #bankname #money{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+    color: #323844;
+}
+.container .point img{
+    width: 5px;
+    height: 9px;
+}
+.container .point img{
+    object-fit: cover;
+}
+.container .sixthrow .point{
+    width: 5px;
+    height: 9px;
+}
+.container .sixthrow .point{
+    object-fit: cover;
+}
+.sixthrow .firstbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 22px;
+}
+.sixthrow .secondbar{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    align-items: center;
+}
+.seventhrow{
+    max-width: 333px;
+    height: 133px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 133px;
+    left: -15px;
+}
+.scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.seventhrow .box{
+    min-width: 76px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+    margin-left: 15px;
+}
+.seventhrow #firstline{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 26px; 
+    letter-spacing: -0.4px;
+    color: #51585e;  
+    position: absolute;
+    top: 10px;
+}
+.seventhrow #firstline #secondline{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+    color: #323844;
+}
+.seventhrow .icon{
+    position: absolute;
+    right: 15px;
+    bottom: 17px;
+}
+.seventhrow .icon img{
+    width: 26px;
+    height: 27px;
+    object-fit: cover;
+}
+.eightrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 290px;
+    left: 17px;
+}
+.eightrow .smallbox{
+    width: 111px;
+    height: 45px;
+    background-color: #e6eaed;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.eightrow .smallbox img{
+    width: 13px;
+    height: 15px;
+}
+.eightrow .smallbox #plus{
+    width: 12px;
+    height: 13px;
+}
+.eightrow .smallbox #word{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    color: #4c5866;
+    margin-left: 6px;
+}
+.ninethrow{
+    height: 129px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 390px;
+    background-color: #f2f3f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    color: #9ea2ab;
+}
+.tenthrow{
+    width: 333px;
+    height: 70px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    position: fixed;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+.tenthrow .bottombar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 9px 15px 29px 15px
+}
+.tenthrow .bottombar .smallbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tenthrow .bottombar .smallbox img{
+    max-width: 20px;
+    max-height: 18px;
+    object-fit: cover;
+}
+.tenthrow .bottombar .smallbox span{
+    position: relative;
+    top: 3px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    color: #717787;
+}
+.eleven{
+    width: 100%;
+    height: 77px;
+    background-color: #f2f3f5;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+}
