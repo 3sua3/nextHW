@@ -34,25 +34,26 @@ chartbtn.click()
 
 # 좋아하는 가수의 곡명 10개
 
+
 # 순위, 곡명, 가수명 가져오기
-import csv
+# import csv
 
-file = open('melon.csv', mode = "w", newline = '')
-writer = csv.writer(file)
+# file = open('melon.csv', mode = "w", newline = '')
+# writer = csv.writer(file)
 
-for i in range(1, 6):
-    print(i, '중간점검')
-    time.sleep(2)
-    number = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[2]/div/span[1]').text
-    time.sleep(2)
-    title = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[6]/div/div/div[1]/span/a').text
-    time.sleep(2)
-    singer = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[6]/div/div/div[2]/a').text
-    time.sleep(2)
-    writer.writerow([number, title, singer])
-    print(number, title, singer)
+# for i in range(1, 6):
+#     print(i, '중간점검')
+#     time.sleep(2)
+#     number = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[2]/div/span[1]').text
+#     time.sleep(2)
+#     title = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[6]/div/div/div[1]/span/a').text
+#     time.sleep(2)
+#     singer = driver.find_element(By.XPATH, f'/html/body/div/div[3]/div/div/div[3]/form/div/table/tbody/tr[{i}]/td[6]/div/div/div[2]/a').text
+#     time.sleep(2)
+#     writer.writerow([number, title, singer])
+#     print(number, title, singer)
 
-file.close()
+# file.close()
     
 
 
