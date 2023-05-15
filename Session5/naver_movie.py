@@ -28,28 +28,28 @@ rankingbtn.click()
 time.sleep(3)
 
 for i in range(1, 21):
-    time.sleep(7)
+    time.sleep(10)
     click_movie = driver.find_element(By.XPATH, f'/html/body/div/div[4]/div/div/div/div/div[1]/table/tbody/tr[{i + 1}]/td[2]/div/a')
-    time.sleep(7)
+    time.sleep(10)
     click_movie.click()
-    time.sleep(7)
+    time.sleep(10)
     try:
-        genre = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[1]/p/span[1]/a[1]').text
-        time.sleep(7)
+        genre = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[1]/p/span[1]').text
+        time.sleep(10)
         master = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[2]/p/a').text
-        time.sleep(7)
+        time.sleep(10)
         score = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[4]/div[5]/div[2]/div[2]/div[1]/div/span/em').text
-        time.sleep(7)
+        time.sleep(10)
     except:
-        genre = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[1]/p/span[1]/a[1]').text
-        time.sleep(7)
+        genre = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[1]/p/span[1]').text
+        time.sleep(10)
         master = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[2]/div[1]/dl/dd[2]/p/a').text
-        time.sleep(7)
+        time.sleep(10)
         score = driver.find_element(By.XPATH, '//*[@id="content"]/div[1]/div[4]/div[4]/div[2]/div[2]/div[1]/div/span/em').text
-        time.sleep(7)
+        time.sleep(10)
 
     writer_one.writerow([genre, master, score])
-    time.sleep(7)
+    time.sleep(10)
     driver.back()
 
 #좋아하는 영화 제목, 감독, 평점, 리뷰 개수
